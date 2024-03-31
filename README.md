@@ -44,6 +44,12 @@ WHEN I open the `.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
 
+## Installation
+
+```bash
+git clone git@github.com:fredm23579/svg-creator.git
+```
+
 ## Demo
 
 The following image shows a mock-up of the generated SVG given the following input entered by the user: `SVG` for the text, `white` for the text color, `circle` from the list of shapes, and `green` for the shape color. 
@@ -52,7 +58,7 @@ The following image shows a mock-up of the generated SVG given the following inp
 
 The following video shows the demo of the application:
 
-![Demo video showing application in action](./assets/svg-creator.mp4)
+![Demo video showing application in action](./assets/svg-creator.gif)
 
 ## Usage
 
