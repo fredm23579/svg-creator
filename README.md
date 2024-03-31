@@ -1,4 +1,15 @@
 # SVG-CREATOR
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Table of Contents
+- [Description](#description)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license)
 
 ## Description
 
@@ -14,7 +25,7 @@ I WANT to generate a simple logo for my projects
 SO THAT I don't have to pay a graphic designer
 ```
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 ```md
 GIVEN a command-line application that accepts user input
@@ -33,13 +44,17 @@ WHEN I open the `.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
 
-## Mock-Up
+## Demo
 
 The following image shows a mock-up of the generated SVG given the following input entered by the user: `SVG` for the text, `white` for the text color, `circle` from the list of shapes, and `green` for the shape color. 
 
 ![Image showing a green circle with white text that reads "SVG.".](./examples/circle_white_green.svg)
 
-## Additional Info
+The following video shows the demo of the application:
+
+![Demo video showing application in action](./assets/svg-creator.mp4)
+
+## Usage
 
 The application uses [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting input from the user. The application is invoked by using the following command:
 
@@ -47,7 +62,14 @@ The application uses [Jest](https://www.npmjs.com/package/jest) for running the 
 node index.js
 ```
 
-The following is the directory structure:
+## Tests
+
+The application tests are invoked by using the following command:
+
+```bash
+npm test
+```
+The following is the general directory structure:
 
 ```md
 .  
@@ -62,17 +84,18 @@ The following is the directory structure:
 ```
 Each shape class tested for a `render()` method returns a string for the corresponding SVG file with the given shape color.
 
-The following example test should passes:
+The following example test passes as required:
 
 ```js
 const shape = new Triangle();
 shape.setColor("blue");
 expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
 ```
+## Repo Link
 
-You may need to add additional files in the `lib` folder for handling user input, writing to a file, etc. Writing tests for these additional files is **optional**.
+[Repo Link](https://github.com/fredm23579/svg-creator)
 
-## Helpful SVG Resources
+## SVG Resources
 
 * [Example SVG](https://static.fullstack-bootcamp.com/fullstack-ground/module-10/circle.svg)
 
@@ -86,3 +109,13 @@ You may need to add additional files in the `lib` folder for handling user input
 
 * [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
+## Contributing
+Contact the primary developer for contributions.
+
+## Questions
+Contact me:
+* GitHub: [fredm23579](https://github.com/fredm23579)
+* Email: motta@g.ucla.edu
+  
+## License
+This project is covered under the MIT license. To learn more, see the accompanying LICENSE file or visit [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
